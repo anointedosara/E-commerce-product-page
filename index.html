@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <style>
+      .attribution {
+        font-size: 13px;
+        text-align: center;
+        margin-top: 10px;
+        color: hsl(219, 9%, 45%);
+      }
+      .attribution a {
+        color: hsl(26, 100%, 55%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar">
+        <div>
+          <img class="show" src="/images/icon-menu.svg" alt="" />
+          <img class="hide" src="/images/icon-close.svg" alt="" />
+          <img src="/images/logo.svg" alt="" />
+          <ol>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ol>
+        </div>
+        <div>
+          <div class="cart">
+            <span class="cart-num"></span
+            ><img src="/images/icon-cart.svg" alt="" />
+          </div>
+          <img class="avatar" src="/images/image-avatar.png" alt="" />
+          <div class="cart-dropdown">
+            <div class="title"><h3>Cart</h3></div>
+            <div class="cart-content empty">
+              <p>Your cart is empty.</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="inner-wrapper">
+        <div class="product-display"></div>
+
+        <div class="product-description">
+          <h1>Sneaker Company</h1>
+          <h2>Fall Limited Edition Sneakers</h2>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="pri">
+            <div class="price">
+              <h3>$125.00</h3>
+              <span>50%</span>
+            </div>
+            <h4>$250.00</h4>
+          </div>
+          <div class="add">
+            <div>
+              <img class="minus" src="/images/icon-minus.svg" alt="" />
+              <span class="counter">0</span>
+              <img class="plus" src="/images/icon-plus.svg" alt="" />
+            </div>
+            <button class="add-to-cart">
+              <img src="/images/icon-cart.svg" alt="" />
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal">
+      <div class="modal-item"></div>
+    </div>
+
+    
+      <div class="cover"></div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Anointed Osara</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
