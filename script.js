@@ -150,15 +150,13 @@ const cartDropdown = document.querySelector(".cart-dropdown");
 const cartContent = document.querySelector(".cart-content");
 const addToCartBtn = document.querySelector(".add-to-cart");
 cartDropdown.style.display = "none";
-
-const showCart = () => {
+cartIcon.addEventListener("click", () => {
   cartDropdown.style.display =
     cartDropdown.style.display === "block" ? "none" : "block";
-    
-}
-cartIcon.addEventListener("click", () => {
-showCart()
- handleHideNav()
+  show.classList.add("addd");
+  nav.style.display = "";
+  hide.classList.remove("addd");
+  cover.classList.remove("showCover");
 });
 
 let itemCount = 0;
@@ -241,20 +239,19 @@ const cover = document.querySelector(".cover");
 const handleShowNav = () => {
   document.body.style.overflow = "hidden";
   nav.style.display = "flex";
-  show.style.display = "none";
-  hide.style.display = "block";
+  show.classList.remove("addd");
+  hide.classList.add("addd");
   cover.classList.add("showCover");
-  cartDropdown.style.display = "none"
-  
+  cartDropdown.style.display = "none";
 };
 show.addEventListener("click", handleShowNav);
 
 const handleHideNav = () => {
   document.body.style.background = "hsl(36, 100%, 99%)";
   document.body.style.overflow = "auto";
+  show.classList.add("addd");
   nav.style.display = "none";
-  show.style.display = "block";
-  hide.style.display = "none";
+  hide.classList.remove("addd");
   cover.classList.remove("showCover");
 };
 hide.addEventListener("click", handleHideNav);
