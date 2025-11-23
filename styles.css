@@ -311,7 +311,7 @@ h4 {
   display: none;
   position: absolute;
   top: 90px;
-  right: 150px;
+  right: -60px;
   width: 350px;
   background: #fff;
   border-radius: 12px;
@@ -574,6 +574,7 @@ h4 {
   }
   .show {
     display: block;
+    margin-right: 20px;
   }
   .addd {
     margin-right: 20px;
