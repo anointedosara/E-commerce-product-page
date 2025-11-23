@@ -235,7 +235,7 @@ const show = document.querySelector(".show");
 const hide = document.querySelector(".hide");
 const nav = document.querySelector(".navbar ol");
 const cover = document.querySelector(".cover");
-
+show.classList.add("addd");
 const handleShowNav = () => {
   document.body.style.overflow = "hidden";
   nav.style.display = "flex";
